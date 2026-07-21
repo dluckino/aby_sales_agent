@@ -1,4 +1,4 @@
-query> What is the warranty on Three Birds Casual?
+# query> What is the warranty on Three Birds Casual?
 
 [1.399] POLYWOOD® Nautical Curveback Adirondack 5-Piece Set with Fire Table in Vintage
 POLYWOOD® Nautical Curveback Adirondack 5-Piece Set with Fire Table in Vintage
@@ -18,7 +18,7 @@ POLYWOOD® Quattro 5-Piece Conversation Set
 Vendor: Polywood | Type: Conversation Group | Tags: Adirondack, Conversation Group, Polywood, Set
 
 The Quattro 5-Piece Conversation Set is modern and attract
-query> three birds casual
+# query> three birds casual
 
 [1.072] Three Birds Casual SoHo 20" Square Side Table
 Three Birds Casual SoHo 20" Square Side Table
@@ -30,14 +30,14 @@ Product Includes • One (1) SoHo 2
 Three Birds Casual St. Lucia Deep Seating Right Settee
 Vendor: Three Birds Casual | Type: Deep Seating | Tags: Cushion, Deep Seating, Loveseat, Sectional, Settee, Sofa, Teak, Three Birds Casual
 
-Produ
+Product
 
 [1.133] Three Birds Casual St. Lucia Chaise Lounger
 Three Birds Casual St. Lucia Chaise Lounger
 Vendor: Three Birds Casual | Type: Chaises | Tags: Chaise, Chaises, Cushion, Deep Seating, Lounge, Teak, Three Birds Casual
 
 Product Includes • One (1) St. 
-query> Polywood
+# query> Polywood
 
 [0.687] POLYWOOD® South Beach Adirondack
 POLYWOOD® South Beach Adirondack
@@ -56,7 +56,7 @@ POLYWOOD® Vineyard 48" Bench
 Vendor: Polywood | Type: Benches & Swings | Tags: Bench, Polywood
 
 This cozy bench is perfect for stargazing on a warm summer night. POLYWOOD furniture is constructed of s
-query> Adirondack
+# query> Adirondack
 
 [0.948] POLYWOOD® Modern Curveback Adirondack Chair in Vibrant Colors
 POLYWOOD® Modern Curveback Adirondack Chair in Vibrant Colors
@@ -68,14 +68,14 @@ Vendor: Polywood | Type: Adirondack Chair | Tags: Adirondack, Polywood
 POLYWOOD® Quattro Folding Adirondack in Vibrant Colors
 Vendor: Polywood | Type: Adirondack Chair | Tags: Adirondack, Polywood
 
-The Quattro Folding Adirondack chair is easy to fold flat so you can stor
+The Quattro Folding Adirondack chair is easy to fold flat so you can storage
 
 [0.971] POLYWOOD® Quattro 3-Piece Adirondack Set
 POLYWOOD® Quattro 3-Piece Adirondack Set
 Vendor: Polywood | Type: Small Space | Tags: Adirondack, Front Porch, Polywood, Set, Small Space
 
 If you're ever curious as to what would enhance the look of y
-query> I want a set that I can eat dinner with a family of 6
+# query> I want a set that I can eat dinner with a family of 6
 
 [1.036] POLYWOOD® Lakeside 7-Piece Farmhouse Dining Set
 POLYWOOD® Lakeside 7-Piece Farmhouse Dining Set
@@ -94,7 +94,7 @@ Truss 6pc Dining Group w/ Bench
 Vendor: Winston | Type: Dining Group | Tags: Dining Group, outdoor wicker, Set, Teak, Winston
 
 The Truss collection has the appeal of classic craftsman style furniture 
-query> Hello, can you please tell me the warranty on the Three Birds Casual St. Lucia Chaise Lounger? And also the Polywood South beach conversation group's warranty?
+# query> Hello, can you please tell me the warranty on the Three Birds Casual St. Lucia Chaise Lounger? And also the Polywood South beach conversation group's warranty?
 
 [0.993] POLYWOOD® Riviera Modern Lounge 4-Piece Set
 POLYWOOD® Riviera Modern Lounge 4-Piece Set
@@ -116,7 +116,7 @@ Three Birds Casual St. Lucia Swivel Rocker
 Vendor: Three Birds Casual | Type: Deep Seating | Tags: Cushion, Deep Seating, Lounge, Swivel, Swivel Rocker, Teak, Three Birds Casual
 
 Product Includes • On
-query> A chair I can recline flat on by the pool
+# query> A chair I can recline flat on by the pool
 
 [0.990] POLYWOOD Coastal 5-Piece Farmhouse Trestle Arm Chair Group
 POLYWOOD Coastal 5-Piece Farmhouse Trestle Arm Chair Group
@@ -212,7 +212,7 @@ AG25T Cantilever Umbrella
 Vendor: Treasure Garden | Type: Protective Covers | Tags: Furniture Covers, Protective Covers, Table Cover, Treasure Garden
 
 The Protective Furniture Covers are made with a T
-query> I want a good chaise lounger
+# query> I want a good chaise lounger
 
 [0.626] POLYWOOD® Coastal 3-Piece Wheeled Chaise Set
 POLYWOOD® Coastal 3-Piece Wheeled Chaise Set
@@ -231,14 +231,14 @@ Ebel Laurent Chaise Lounge
 Vendor: Ebel | Type: Deep Seating | Tags: Chaise, Deep Seating, Ebel, outdoor wicker, Pool Lounger, Poolside
 
 Set the standard for backyard parties with Laurent’s modular an
-query> ^CTraceback (most recent call last):
+# query> ^CTraceback (most recent call last):
   File "/Users/dominicluckino/dev/aby_sales_agent/knowledge.py", line 19, in <module>
     query = input("query> ")
 KeyboardInterrupt
 
 
 
-Ingest Output:
+# Ingest Output:
 
 Ingested 446 products
 Collection now holds 446 chunks
