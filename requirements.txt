@@ -3,3 +3,5 @@ uvicorn
 python-dotenv
 anthropic
 requests
+chromadb
+beautifulsoup4
