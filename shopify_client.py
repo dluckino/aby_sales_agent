@@ -69,6 +69,29 @@ def fetch_all_products():
 
     return products
 
+PRODUCT_SEARCH_QUERY = """
+query ProductSearch($q: String!) {
+  products(first: 5, query: $q) {
+    nodes {
+      title
+      handle
+      vendor
+      priceRangeV2 {
+        minVariantPrice { amount currencyCode }
+        maxVariantPrice { amount }
+      }
+      variants(first: 20) {
+        nodes { title price }
+      }
+    }
+  }
+}
+"""
+
+def search_products(q):
+    result = run_query(PRODUCT_SEARCH_QUERY, {"q": q})
+    return result["products"]["nodes"]
+
 
 if __name__ == "__main__":
     shop = run_query("{ shop { name} }")

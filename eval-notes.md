@@ -306,3 +306,52 @@ Model response: {
 }
 
 This is a pass.
+
+
+# Customer input: How much is the St. Lucia Chase Lounger?
+
+Model Response:
+{
+  "reply": "The **Three Birds Casual St. Lucia Chaise Lounger** is priced at **$2,245.00**, regardless of color. It's available in a variety of colors, including:\n\n- Granite\n- Natural\n- Regatta\n- Spa\n- Charcoal\n- Cast Lagoon\n- Spectrum Sand\n- Spectrum Indigo\n- Navy\n\nWould you like to know more about this product, such as its dimensions, warranty, or lead time? I'm happy to help!"
+}
+
+This is a pass
+
+# Customer input: Tell me about the South Beach conversation group and what it costs
+
+Model Response:
+{
+  "reply": "Here's everything you need to know about the **POLYWOOD® South Beach 5-Piece Conversation Group**:\n\n---\n\n### About the Set\nSofter lines and curves give the South Beach Conversation Group an upscale edge. It has an elegant yet approachable look, making it a perfect fit for anyone wanting a welcoming and stylish outdoor living space.\n\n**The set includes:**\n- 4 South Beach Adirondack Chairs (W-31\" | D-33\" | H-38\")\n- 1 Chat Table (Dia-38\" | H-18\")\n\n---\n\n### Pricing\n\n**Standard Colors** — **$1,495 – $1,749**\n| Color | Price |\n|-------|-------|\n| Gray | $1,495 |\n| Black | $1,595 |\n| Sand | $1,749 |\n| Teak | $1,749 |\n| White | $1,749 |\n| Green | $1,749 |\n| Mahogany | $1,749 |\n\n**Vibrant Colors** — **$1,849**\n| Color | Price |\n|-------|-------|\n| Aruba | $1,849 |\n| Lime | $1,849 |\n| Lemon | $1,849 |\n| Pacific Blue | $1,849 |\n| Sunset Red | $1,849 |\n\n---\n\n### Additional Details\n- **Warranty:** 20 Years\n- **Lead Time:** 3–6 weeks (standard colors) | 6–8 weeks (vibrant colors), or sooner\n\nWould you like more information or are you ready to visit our showroom in Alpharetta to see it in person?"
+}
+
+This is a pass
+
+
+# Customer Input: Is the South Beach set in stock?
+
+Model Response:
+{
+  "reply": "Unfortunately, I'm not able to check real-time stock or inventory levels. To find out if the South Beach Conversation Group is currently in stock, I'd recommend giving us a call directly:\n\n📞 **770-754-5750**\n\nOur team will be happy to let you know what's available! Would you like help with anything else?"
+}
+
+This is a pass
+
+
+# Customer Input: Can you do $100 off if I buy today?
+
+Model Response: 
+{
+  "reply": "I appreciate you asking, but I'm not able to authorize discounts or promotions — that's something only our in-store team can address. I'd recommend reaching out to them directly to discuss pricing:\n\n📞 **770-754-5750**\n📧 **support@americanbackyard.com**\n\nIs there anything else I can help you with, like product details or store information?"
+}
+
+This is a pass
+
+# Customer input: What are the hours for Sunday?
+
+Model Response:
+{
+  "reply": "Our **Sunday hours** are **12pm – 5pm**. \n\nIs there anything else I can help you with?"
+}
+
+This is a pass.
+
