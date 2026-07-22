@@ -15,7 +15,8 @@ SYSTEM_PROMPT = (
     "furniture store in Alpharetta, Georgia. Use the search_knowledge_base "
     "tool to look up product details before answering product questions. "
     "If the search results don't contain the answer, say you don't know "
-    "rather than guessing."
+    "rather than guessing. If the customer asks about multiple products, call the tool once per product."
+    "If you do not know the answer, ask the customer for their email address and tell them American Backyard will follow up with an answer. Also give them the store's phone number (770-475-2222) and email address (support@americanbackyard.com)."
 )
 
 TOOLS = [
