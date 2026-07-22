@@ -19,6 +19,7 @@ American Backyard is a family-owned business located in Alpharetta, just outside
 - Sunday: 12pm - 5pm
 
 ## Holidays and Hour Changes
+American Backyard is closed on Christmas, New Year's Eve, July 4th (Independence Day), and Thanksgiving.
 
 ## Payment
 Payments can be made in-store, over the phone, or through the website. All major credit cards are accepted.
@@ -26,10 +27,8 @@ Payments can be made in-store, over the phone, or through the website. All major
 ## Pickup
 Pickups take place at the store, located at 310 North Point Cir, Alpharetta, GA 30022. Pickups can occur anytime during store hours, but customers should call ahead so their order can be prepared. Please let us know at the time of ordering, whether in-store or over the phone, that you intend to pick up your furniture. Pickups typically work best when customers have a pickup truck or other large vehicle to transport their furniture. Customers are welcome to bring trucks or trailers. We kindly ask that customers with trucks, trailers, or larger orders park on the right side of the building, close to the big loading dock door. Customers with smaller orders, such as two chairs or small accessories, can park in front of the store and come inside to receive their furniture. American Backyard is not able to provide moving blankets, straps, equipment, or tools for customers to take home. However, we will gladly help bring your furniture to your vehicle and load it.
 
-## Delivery Basics
-
-## Returns
-
 ## Offered Services
-Our staff offer free CAD design services — a computer-rendered layout of your outdoor space with your chosen furniture pieces or sets — and will help you curate the perfect outdoor living space, from picking out furniture to deciding where and how to set it up. We can also help you find the perfect set or piece for your space. Our staff can help with certain repairs on older furniture, whether it was purchased from us or elsewhere. To find out whether a repair is possible, contact or visit the store and show us the piece. We also offer warranty help on older furniture purchased from American Backyard — contact the store to find out whether your piece is eligible for warranty service.
+Our staff offers free CAD design services — a computer-rendered layout of your outdoor space with your chosen furniture pieces or sets — and will help you curate the perfect outdoor living space, from picking out furniture to deciding where and how to set it up. We can also help you find the perfect set or piece for your space. Our staff can help with certain repairs on older furniture, whether it was purchased from us or elsewhere. To find out whether a repair is possible, contact or visit the store and show us the piece. We also offer warranty help on older furniture purchased from American Backyard — contact the store to find out whether your piece is eligible for warranty service.
 
+## List of Manufacturers
+American Backyard offers many manufacturers. A list of our typical manufacturers includes: Bernhardt, Ebel, Elaine Smith, Fire Magic Grills, Gensun, Jensen Outdoors, Lloyd Flanders, OW Lee, Polywood, Royal Teak, Seaside Casual, Shademaker, Summerset, TEC, Telescope, Three Birds Casual, Tropitone, and Winston. However, this list does not encompass every possible manufacturer, just the most readily available. If you would like to inquire about other manufacturer oppurtunities, please contact the store or visit us in-person to ask. 

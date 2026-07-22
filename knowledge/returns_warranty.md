@@ -1,0 +1,7 @@
+# Returns and Warranty
+
+## Returns
+All sales are final. American Backyard does not accept returns. If a product arrives damaged, contact our staff — by phone or in-store — to determine whether you are eligible for a replacement under warranty.
+
+## Warranty
+American Backyard offers a variety of warranties for furniture and other products in our store. Warranties are typically based on the product's manufacturer. Problems with furniture — especially incorrect items or damage — should be reported immediately upon receiving the order. Failure to report damage promptly could, in some cases, make a customer ineligible for warranty coverage. If damage from weathering or aging occurs over your furniture's lifetime, feel free to call American Backyard to find out whether you are still eligible for warranty coverage. A warranty request will be handled most efficiently if the customer sends their invoice and a picture of the damage or problem to the store email address (bringing the product into the store works just as well). Warranty requests can be complicated and are reviewed on a case-by-case basis. Our staff will assess the nature of the damage or problem and then determine what can be done about it.

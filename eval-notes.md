@@ -263,3 +263,20 @@ New response to the prior input:
 }
 
 This is good enough for now.
+
+
+
+# Stress Testing Model
+
+I stress tested the model and it succeeded in most of my questions. It ignores attempts to cause the AI to give false information or information that is irrelevant to it's goal. However one problem was seen when asking what days the store isn't open. The response was as follows:
+{
+  "reply": "American Backyard is **closed** on the following holidays:\n\n- 🎄 **Christmas**\n- 🎆 **New Year's Eve**\n- 🇺🇸 **July 4th (Independence Day)**\n- 🦃 **Thanksgiving**\n\nOther than those days, we're open for business! For our regular daily hours, I'd recommend reaching out directly to confirm:\n\n- 📞 **770-754-5750**\n- 📧 **support@americanbackyard.com**\n\nIs there anything else I can help you with? 😊"
+}
+
+The issue is that the model is saying to contact the store about daily hours as opposed to just saying the daily hours, which it knows when asked directly.
+
+
+I have fixed the issue by lengthening the system prompt again, but instead of just isolating the change to this instance, I gave more universal advice in hopes of mitigating this problem in the future. The new reply to this question is:
+{
+  "reply": "Great news — American Backyard is open **every day of the week**! However, we are closed on the following holidays:\n\n- 🎄 **Christmas**\n- 🎆 **New Year's Eve**\n- 🇺🇸 **July 4th (Independence Day)**\n- 🦃 **Thanksgiving**\n\nOur regular hours are:\n- **Monday – Saturday:** 10am – 5pm\n- **Sunday:** 12pm – 5pm\n\nIs there anything else I can help you with?"
+}
