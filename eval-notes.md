@@ -280,3 +280,29 @@ I have fixed the issue by lengthening the system prompt again, but instead of ju
 {
   "reply": "Great news — American Backyard is open **every day of the week**! However, we are closed on the following holidays:\n\n- 🎄 **Christmas**\n- 🎆 **New Year's Eve**\n- 🇺🇸 **July 4th (Independence Day)**\n- 🦃 **Thanksgiving**\n\nOur regular hours are:\n- **Monday – Saturday:** 10am – 5pm\n- **Sunday:** 12pm – 5pm\n\nIs there anything else I can help you with?"
 }
+
+
+# Customer input: Am I eligible for a warranty, I bought my POLYWOOD Adirondack 10 years ago from your store?
+
+Model response: {
+  "reply": "Great news — POLYWOOD Adirondack products are listed with a **20-year warranty**! Since you purchased your chair 10 years ago, you would still be within that 20-year window.\n\nHowever, I want to be transparent with you: **warranty eligibility and claims are reviewed on a case-by-case basis by American Backyard staff.** I'm not able to guarantee or confirm that your specific situation is covered — that determination will need to be made by the team after reviewing the details of your claim.\n\nTo get the process started, I'd recommend reaching out to American Backyard directly:\n\n- 📞 **Phone:** 770-754-5750\n- 📧 **Email:** support@americanbackyard.com\n\nThey'll be able to review your purchase and help you with next steps. Is there anything else I can help you with?"
+}
+
+This is a pass
+
+# Customer input: What kind of hot tubs does your store sell?
+
+Model response: {
+  "reply": "I wasn't able to find any hot tub products in the search results. However, this doesn't necessarily mean American Backyard doesn't carry them — it's possible they offer hot tubs or can source them, but I don't want to guess.\n\nFor the most accurate answer, I'd recommend reaching out to the American Backyard team directly:\n\n- 📞 **Phone:** 770-754-5750\n- 📧 **Email:** support@americanbackyard.com\n\nOr you're welcome to visit the showroom in Alpharetta, GA, where staff can help you explore all available options. Is there anything else I can assist you with?"
+}
+
+This will be corrected by making a "we sell this" section and a "We don't sell this" section. For now the model is doing what is typically the correct move, to second guess a lack of information.
+
+
+# Customer input: How much is a delivery to Marietta?
+
+Model response: {
+  "reply": "Great question! American Backyard does offer delivery to Marietta (and all over Georgia), but the pricing **varies based on your location and the nature of the delivery**, so there isn't a flat rate I can quote you.\n\nTo get an accurate delivery cost, I'd recommend reaching out to the team directly:\n\n- 📞 **Phone:** 770-754-5750\n- 📧 **Email:** support@americanbackyard.com\n\nWhen you contact them, they'll be able to give you an exact quote based on your specific address and order. Is there anything else I can help you with?"
+}
+
+This is a pass.
