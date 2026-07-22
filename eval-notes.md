@@ -242,3 +242,24 @@ KeyboardInterrupt
 
 Ingested 446 products
 Collection now holds 446 chunks
+
+
+# Model Negative Hallucination Incident:
+
+Customer Input: "Do you deliver to Marietta"
+
+Model response: 
+{
+  "reply": "Based on our store's policy information, it looks like **American Backyard does not currently offer delivery service**. Orders are available for **customer pickup** at our store located at:\n\n📍 **310 North Point Cir, Alpharetta, GA 30022**\n\nHowever, Marietta isn't too far from Alpharetta, so picking up your order is definitely an option! Just give us a call ahead of time so we can have your order ready.\n\nIf you'd like to confirm whether delivery to Marietta may be available, feel free to contact us directly:\n\n- 📞 **Phone:** 770-754-5750\n- 📧 **Email:** support@americanbackyard.com\n\nIs there anything else I can help you with?"
+}
+
+Problem: Inference from absence: The model currently is working with a knowledge base that told it to skip over delivery. Instead of reporting it did not know if there was a delivery (because the knowledge base did not say "We do not do deliveries" instead it just had no information about deliveries), it made the assumption that there is no delivery. It still gave the customer the ability to inquire about it, however, the customer would believe the AI. This would be fixed when we input the delivery later. However, this shows that the model has a tendency to assume absence of evidence as evidence of absence. Which could prove to be bad later on. This will need to be addressed.
+
+## Model Negative Hallucination problem addressed through System Prompt in main.py.
+New response to the prior input:
+
+{
+  "reply": "Based on the information I have, our policy details cover **pickup** from our store location at **310 North Point Cir, Alpharetta, GA 30022**, but I don't have specific details about delivery options or delivery areas like Marietta in our policy documents.\n\nI wouldn't want to give you an incorrect answer, so I'd recommend reaching out to our team directly for delivery availability:\n\n- 📞 **Phone:** 770-754-5750\n- 📧 **Email:** support@americanbackyard.com\n\nOur staff will be happy to let you know if delivery to Marietta is an option! Would you like help with anything else?"
+}
+
+This is good enough for now.

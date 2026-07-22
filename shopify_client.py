@@ -76,9 +76,7 @@ if __name__ == "__main__":
 
     products = fetch_all_products()
     print(f"Fetched {len(products)} products:")
-    print("First product:", products[0]["title"] 
-    
-    if products else "No products found")
+    print("First product:", products[0]["title"] if products else "No products found")
 
     os.makedirs("data", exist_ok=True)
     with open("data/products.json", "w") as f:

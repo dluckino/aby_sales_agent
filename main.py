@@ -15,17 +15,24 @@ SYSTEM_PROMPT = (
     "furniture store in Alpharetta, Georgia. Use the search_knowledge_base "
     "tool to look up product details before answering product questions. "
     "If the search results don't contain the answer, say you don't know "
-    "rather than guessing. If the customer asks about multiple products, call the tool once per product."
-    "If you do not know the answer, ask the customer for their email address and tell them American Backyard will follow up with an answer. Also give them the store's phone number (770-475-2222) and email address (support@americanbackyard.com)."
+    "rather than guessing. Never state that American Backyard does not "
+    "offer a service, product, or option just because the search results "
+    "don't mention it — missing information means you don't know, not "
+    "that the answer is no. If the customer asks about multiple products, "
+    "call the tool once per product. If you do not know the answer, ask "
+    "the customer for their email address and tell them American Backyard "
+    "will follow up with an answer. Also give them the store's phone number "
+    "(770-754-5750) and email address (support@americanbackyard.com)."
 )
 
 TOOLS = [
     {
         "name": "search_knowledge_base",
         "description": (
-            "Search American Backyard's product catalog. Returns the most "
+            "Search American Backyard's product catalog and story policy documents. Returns the most "
             "relevant product listings (title, vendor, description, warranty, "
-            "lead time, dimensions) for a text query. Include the brand and "
+            "lead time, dimensions) or policy sections (hours, location, payment, "
+            "pickup, services) for a text query. Include the brand and "
             "product name when known, e.g. 'Three Birds Casual St. Lucia "
             "Chaise Lounger warranty'. Keep queries short and specific: "
             "product name plus the attribute you need. If the customer asks "
@@ -37,7 +44,17 @@ TOOLS = [
                 "query": {
                     "type": "string",
                     "description": "Short search query: brand + product + attribute",
-                }
+                },
+                "category": {
+                    "type": "string",
+                    "enum": ["product", "policy"],
+                    "description": (
+                        "Optional filter. Use 'policy' for store hours, "
+                        "location, payment, pickup, delivery, returns, and "
+                        "services. Use 'product' for catalog items. Omit to "
+                        "search everything."
+                    ),
+                },
             },
             "required": ["query"],
         },
@@ -79,8 +96,17 @@ async def chat(req: ChatRequest):
         results = []
         for block in response.content:
             if block.type == "tool_use":
-                print(f"[tool] {block.name}: {block.input['query']}")
-                hits = search_knowledge_base(block.input["query"])
+                print(f"[tool] {block.name}: {block.input['query']} (category={block.input.get('category')})")
+                hits = search_knowledge_base(
+                    block.input["query"],
+                    category=block.input.get("category")
+                )
+                if hits:
+                    print(f"[tool] -> {len(hits)} hits, best {hits[0]['distance']:.3f}: {hits[0]['metadata']['title']}")
+                else:
+                    print("[tool] -> 0 hits")
+                
+
                 results.append({
                     "type": "tool_result",
                     "tool_use_id": block.id,
