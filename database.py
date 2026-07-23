@@ -13,6 +13,18 @@ def init_db():
                 created_at TEXT NOT NULL DEFAULT (datetime('now'))
             );
         """)
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS leads(
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                session_id TEXT NOT NULL,
+                name TEXT,
+                email TEXT NOT NULL,
+                phone TEXT,
+                product_interest TEXT,
+                question TEXT NOT NULL,
+                created_at TEXT NOT NULL DEFAULT (datetime('now'))
+                );
+        """)
 
 
 def save_message(session_id, role, content):
@@ -20,6 +32,13 @@ def save_message(session_id, role, content):
         conn.execute(
             "INSERT INTO messages (session_id, role, content) VALUES (?, ?, ?)",
             (session_id, role, content)
+        )
+
+def save_lead(session_id, email, question, name=None, phone=None, product_interest=None):
+    with sqlite3.connect(DB_PATH) as conn:
+        conn.execute(
+            "INSERT INTO leads (session_id, email, question, name, phone, product_interest) VALUES (?, ?, ?, ?, ?, ?)",
+            (session_id, email, question, name, phone, product_interest)
         )
 
 

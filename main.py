@@ -3,10 +3,11 @@ from fastapi import FastAPI
 from pydantic import BaseModel, Field
 from anthropic import AsyncAnthropic
 from dotenv import load_dotenv
-from database import init_db, save_message, get_history
+from database import init_db, save_message, get_history, save_lead
 from knowledge import search_knowledge_base
 from shopify_client import search_products
 import asyncio
+from emailer import send_lead_email
 
 load_dotenv()
 client = AsyncAnthropic()
@@ -34,10 +35,15 @@ SYSTEM_PROMPT = (
     "staff. You cannot check stock, inventory, or availability; if a customer "
     "asks whether something is in stock, direct them to call the store. "
     "If the customer asks about multiple products, call the tool "
-    "once per product. Only when searching has failed to answer the "
-    "question: ask the customer for their email address, tell them "
-    "American Backyard will follow up, and share the store's phone "
-    "number (770-754-5750) and email address (support@americanbackyard.com)."
+    "once per product. Only when searching has failed to answer the question, or when the "
+    "customer wants a delivery quote or asks to be contacted: ask the "
+    "customer for their email address (and, if they're willing, their "
+    "name and phone number), then use the create_lead tool to save their "
+    "information so staff can follow up. Never invent or assume contact "
+    "details — only use information the customer actually provided in "
+    "this conversation. After the lead is created, confirm that the team "
+    "will reach out, and mention the store's phone number (770-754-5750) "
+    "for anyone who prefers to call, and the store's email address is (support@americanbackyard.com)."
 )
 
 TOOLS = [
@@ -48,7 +54,7 @@ TOOLS = [
             "relevant product listings (title, vendor, description, warranty, "
             "lead time, dimensions) or policy sections (hours, location, payment, "
             "pickup, services) for a text query. Include the brand and "
-            "product name when known, e.g. 'Three Birds Casual St. Lucia "
+            "product name and when known, e.g. 'Three Birds Casual St. Lucia "
             "Chaise Lounger warranty'. Keep queries short and specific: "
             "product name plus the attribute you need. If the customer asks "
             "about multiple products, call this tool once per product."
@@ -95,6 +101,30 @@ TOOLS = [
                 }
             },
             "required": ["query"],
+        },
+    },
+    {
+        "name": "create_lead",
+        "description": (
+            "Save a customer's contact information so American Backyard "
+            "staff can follow up, and notify staff by email. Use this when "
+            "you cannot answer the customer's question, when they want a "
+            "delivery price quote, or when they ask to be contacted. The "
+            "customer's email address is required — ask for it first, and "
+            "only use contact details the customer actually provided in "
+            "this conversation. Summarize their request in the question "
+            "field."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "email": {"type": "string", "description": "Customer's email address, as they provided it"},
+                "question": {"type": "string", "description": "The customer's question or request, summarized"},
+                "name": {"type": "string", "description": "Customer's name, if given"},
+                "phone": {"type": "string", "description": "Customer's phone number, if given"},
+                "product_interest": {"type": "string", "description": "Product or category they asked about, if any"},
+            },
+            "required": ["email", "question"],
         },
     },
 ]
@@ -165,6 +195,31 @@ async def chat(req: ChatRequest):
                     products = await asyncio.to_thread(search_products, block.input["query"])
                     content = format_products(products)
                     print(f"[tool] -> {len(products)} products")
+                elif block.name == "create_lead":
+                    print(f"[tool] {block.name}: {block.input.get('email')}")
+                    save_lead(
+                        req.session_id,
+                        block.input["email"],
+                        block.input["question"],
+                        name=block.input.get("name"),
+                        phone=block.input.get("phone"),
+                        product_interest=block.input.get("product_interest"),
+                    )
+                    try:
+                        await asyncio.to_thread(
+                            send_lead_email,
+                            email=block.input["email"],
+                            question=block.input["question"],
+                            name=block.input.get("name"),
+                            phone=block.input.get("phone"),
+                            product_interest=block.input.get("product_interest"),
+                            session_id=req.session_id,
+                        )
+                        content = "Lead saved. American Backyard staff have been notified and should follow up shortly."
+                        print("[tool] -> lead saved + staff email sent")
+                    except Exception as e:
+                        content = "Lead saved. American Backyard staff will follow up."
+                        print(f"[tool] -> lead saved, but EMAIL FAILED: {e}")
                 results.append({
                     "type": "tool_result",
                     "tool_use_id": block.id,
