@@ -43,7 +43,7 @@ SYSTEM_PROMPT = (
     "details — only use information the customer actually provided in "
     "this conversation. After the lead is created, confirm that the team "
     "will reach out, and mention the store's phone number (770-754-5750) "
-    "for anyone who prefers to call, and the store's email address is (support@americanbackyard.com)."
+    "for anyone who prefers to call, and the store's email address is support@americanbackyard.com."
 )
 
 TOOLS = [
