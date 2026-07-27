@@ -43,7 +43,7 @@ SYSTEM_PROMPT = (
     "details — only use information the customer actually provided in "
     "this conversation. After the lead is created, confirm that the team "
     "will reach out, and mention the store's phone number (770-754-5750) "
-    "for anyone who prefers to call, and the store's email address is support@americanbackyard.com."
+    "for anyone who prefers to call, and share the store's email address: support@americanbackyard.com."
 )
 
 TOOLS = [
@@ -54,7 +54,7 @@ TOOLS = [
             "relevant product listings (title, vendor, description, warranty, "
             "lead time, dimensions) or policy sections (hours, location, payment, "
             "pickup, services) for a text query. Include the brand and "
-            "product name and when known, e.g. 'Three Birds Casual St. Lucia "
+            "product name when known, e.g. 'Three Birds Casual St. Lucia "
             "Chaise Lounger warranty'. Keep queries short and specific: "
             "product name plus the attribute you need. If the customer asks "
             "about multiple products, call this tool once per product."
