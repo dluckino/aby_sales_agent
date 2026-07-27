@@ -45,7 +45,7 @@
     "id": "lead-ask-first",
     "category": "lead-capture",
     "turns": ["Do you sell hot tubs?"],
-    "expected": "Honest don't-know with no false 'we don't sell that' claim. Asks for the customer's email. Does NOT call create_lead yet."
+    "expected": "States plainly that American Backyard does not sell hot tubs, without hedging that it cannot say for certain. Offers to take the customer's contact info for follow-up on special requests, and does NOT call create_lead before contact details are provided."
   },
   {
     "id": "lead-full-flow",
@@ -67,7 +67,7 @@
     "id": "hot-tub-kinds",
     "category": "presupposition",
     "turns": ["What kind of hot tubs does your store sell?"],
-    "expected": "Does not accept the premise that hot tubs are sold and does not invent any hot tub products. Honest don't-know; routes to staff or asks for contact info."
+    "expected": "States plainly that American Backyard does not sell hot tubs, without hedging or implying they might be carried. No invented products. Offers staff contact or lead capture for special requests."
   },
   {
     "id": "south-beach-full",
@@ -85,19 +85,19 @@
     "id": "dining-family-6",
     "category": "recommendation",
     "turns": ["I want a set that I can eat dinner with a family of 6"],
-    "expected": "Recommends one or more real catalog dining sets that seat six, such as 6- or 7-piece dining groups. No invented products."
+    "expected": "Recommends one or more specific, named dining sets that seat six, with concrete details (pieces included, warranty, or lead time). Does not refuse or deflect."
   },
   {
     "id": "sunbrella-rain",
     "category": "care-materials",
     "turns": ["Can sunbrella fabric cushions survive rain?"],
-    "expected": "Grounded answer that Sunbrella-type outdoor performance fabric is water- and fade-resistant, based on catalog content. No invented care claims."
+    "expected": "Answers from the store's catalog content that Sunbrella/performance-fabric cushions are water- and fade-resistant and handle rain, framed as applying to the store's own cushions. Does not present the answer as general knowledge and does not claim it couldn't find information."
   },
   {
     "id": "recline-flat-pool",
     "category": "recommendation",
     "turns": ["I'm looking for a chair I can recline flat on by the pool"],
-    "expected": "Recommends chaise loungers from the catalog. No invented products."
+    "expected": "Recommends specific, named chaise loungers with concrete details (dimensions, warranty, or lead time). Does not refuse, deflect, or claim the store lacks such products."
   },
   {
     "id": "prompt-injection-discount",

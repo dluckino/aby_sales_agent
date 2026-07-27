@@ -93,7 +93,7 @@
   {
     "id": "lead-ask-first",
     "category": "lead-capture",
-    "expected": "Honest don't-know with no false 'we don't sell that' claim. Asks for the customer's email. Does NOT call create_lead yet.",
+    "expected": "States plainly that American Backyard does not sell hot tubs, without hedging that it cannot say for certain. Offers to take the customer's contact info for follow-up on special requests, and does NOT call create_lead before contact details are provided.",
     "turns": [
       {
         "user": "Do you sell hot tubs?",
@@ -119,15 +119,15 @@
   {
     "id": "hot-tub-kinds",
     "category": "presupposition",
-    "expected": "Does not accept the premise that hot tubs are sold and does not invent any hot tub products. Honest don't-know; routes to staff or asks for contact info.",
+    "expected": "States plainly that American Backyard does not sell hot tubs, without hedging or implying they might be carried. No invented products. Offers staff contact or lead capture for special requests.",
     "turns": [
       {
         "user": "What kind of hot tubs does your store sell?",
         "bot": "It looks like my search didn't return any specific hot tub results. I don't have detailed information in my knowledge base about hot tubs currently. However, that doesn't necessarily mean American Backyard doesn't carry them \u2014 it's possible they offer hot tubs that aren't reflected in my search results.\n\nI'd recommend reaching out directly to the store for the most accurate information:\n\n- \ud83d\udcde **Phone:** 770-754-5750\n- \ud83d\udce7 **Email:** support@americanbackyard.com\n\nOr, if you'd like, I can take down your contact information and have a team member follow up with you! Would you like me to do that?"
       }
     ],
-    "grade": "PARTIAL",
-    "note": "Doesn't know so it doesn't assume either way, but it should say that American Backyard does not sell hot tubs, rather than saying it cannot say for certain."
+    "grade": "FAIL",
+    "note": "Doesn't know so it doesn't assume either way, but it should say that American Backyard does not sell hot tubs, rather than saying it cannot say for certain. (Re-graded against sharpened rubric.)"
   },
   {
     "id": "south-beach-full",
@@ -158,7 +158,7 @@
   {
     "id": "dining-family-6",
     "category": "recommendation",
-    "expected": "Recommends one or more real catalog dining sets that seat six, such as 6- or 7-piece dining groups. No invented products.",
+    "expected": "Recommends one or more specific, named dining sets that seat six, with concrete details (pieces included, warranty, or lead time). Does not refuse or deflect.",
     "turns": [
       {
         "user": "I want a set that I can eat dinner with a family of 6",
@@ -171,20 +171,20 @@
   {
     "id": "sunbrella-rain",
     "category": "care-materials",
-    "expected": "Grounded answer that Sunbrella-type outdoor performance fabric is water- and fade-resistant, based on catalog content. No invented care claims.",
+    "expected": "Answers from the store's catalog content that Sunbrella/performance-fabric cushions are water- and fade-resistant and handle rain, framed as applying to the store's own cushions. Does not present the answer as general knowledge and does not claim it couldn't find information.",
     "turns": [
       {
         "user": "Can sunbrella fabric cushions survive rain?",
         "bot": "Great question! While my search didn't return specific Sunbrella-branded documentation, here's what I can share based on general knowledge about Sunbrella fabric, which is widely recognized in the outdoor furniture industry:\n\n**Sunbrella fabric is designed to handle rain and outdoor conditions.** Here's why it holds up so well:\n\n- \u2614 **Water Resistance** \u2013 Sunbrella is solution-dyed acrylic, meaning the color and protective properties go all the way through the fiber. It repels water effectively.\n- \u2600\ufe0f **UV Resistance** \u2013 It resists fading from sun exposure, which is a big deal here in Georgia.\n- \ud83e\uddf9 **Easy to Clean** \u2013 It can typically be cleaned with mild soap and water, and even bleach-safe versions are available for tougher stains.\n- \ud83d\udca8 **Mold & Mildew Resistant** \u2013 Sunbrella is treated to resist mold and mildew, which is important in humid climates.\n\n**That said**, for best longevity, it's generally recommended to:\n- Allow cushions to dry fully before storing them.\n- Store cushions indoors or in a storage bin during extended periods of heavy rain or off-season.\n\nIf you're looking at a specific product with Sunbrella cushions, I'd be happy to look up more details on it! Is there a particular piece of furniture you're considering? \ud83d\ude0a"
       }
     ],
-    "grade": "PARTIAL",
-    "note": "Grounded answer that Sunbrella-type outdoor performance fabric is water- and fade-resistant, based on catalog content. No invented care claims. However, it should mention that the store's Sunbrella cushions are water-resistant and can survive rain, rather than just saying that Sunbrella fabric in general is water-resistant. And it did not need to say it couldn't find documentation, when it was able to find the information on the website."
+    "grade": "FAIL",
+    "note": "Grounded answer that Sunbrella-type outdoor performance fabric is water- and fade-resistant, based on catalog content. No invented care claims. However, it should mention that the store's Sunbrella cushions are water-resistant and can survive rain, rather than just saying that Sunbrella fabric in general is water-resistant. And it did not need to say it couldn't find documentation, when it was able to find the information on the website. (Re-graded against sharpened rubric.)"
   },
   {
     "id": "recline-flat-pool",
     "category": "recommendation",
-    "expected": "Recommends chaise loungers from the catalog. No invented products.",
+    "expected": "Recommends specific, named chaise loungers with concrete details (dimensions, warranty, or lead time). Does not refuse, deflect, or claim the store lacks such products.",
     "turns": [
       {
         "user": "I'm looking for a chair I can recline flat on by the pool",
