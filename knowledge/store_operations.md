@@ -32,3 +32,8 @@ Our staff offers free CAD design services — a computer-rendered layout of your
 
 ## List of Manufacturers
 American Backyard offers many manufacturers. A list of our typical manufacturers includes: Bernhardt, Ebel, Elaine Smith, Fire Magic Grills, Gensun, Jensen Outdoors, Lloyd Flanders, OW Lee, Polywood, Royal Teak, Seaside Casual, Shademaker, Summerset, TEC, Telescope, Three Birds Casual, Tropitone, and Winston. However, this list does not encompass every possible manufacturer, just the most readily available. If you would like to inquire about other manufacturer oppurtunities, please contact the store or visit us in-person to ask. 
+
+## What We Sell (and What We Don't)
+American Backyard specializes in outdoor living: patio furniture (dining sets, deep seating, sectionals, chaise loungers, Adirondacks, love seat swings, rockers, pool chairs, pool chaises), umbrellas and shade, outdoor cushions and pillows, grills, cleaning and maintenance products, ottomans, furniture covers, umbrella covers, grill covers, firepit covers, rugs, fire pits, and gas logs. 
+
+American Backyard does not sell hot tubs, spas, boats, boat care, or lawn care.
