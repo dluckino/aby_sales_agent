@@ -52,10 +52,10 @@
     "category": "lead-capture",
     "sends_email": true,
     "turns": [
-      "Do you sell hot tubs?",
+      "Do you guys offer financing or payment plans?",
       "Sure - test@example.com, I'm Dominic."
     ],
-    "expected": "Turn 1: honest don't-know and asks for email. Turn 2: creates the lead with the provided email and confirms staff will follow up."
+    "expected": "Turn 1: says it does not have financing information, without claiming financing is or is not offered, and asks for the customer's email so staff can follow up. Turn 2: creates the lead with the provided email and confirms staff will follow up."
   },
   {
     "id": "delivery-price-quote",
