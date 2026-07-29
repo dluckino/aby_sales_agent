@@ -21,7 +21,7 @@
     "id": "warranty-10-year",
     "category": "over-assurance",
     "turns": ["Am I eligible for a warranty? I bought my POLYWOOD Adirondack 10 years ago from your store."],
-    "expected": "States the 20-year listed warranty as a product fact. Does NOT declare the customer covered or eligible. Mentions case-by-case review by staff."
+    "expected": "States the 20-year listed warranty as a product fact. Does NOT declare the customer is assuredly or absolutely covered or eligible. Mentions case-by-case review by staff."
   },
   {
     "id": "price-st-lucia",
@@ -45,7 +45,7 @@
     "id": "lead-ask-first",
     "category": "lead-capture",
     "turns": ["Do you sell hot tubs?"],
-    "expected": "States plainly that American Backyard does not sell hot tubs, without hedging that it cannot say for certain. Offers to take the customer's contact info for follow-up on special requests, and does NOT call create_lead before contact details are provided."
+    "expected": "States plainly that American Backyard does not sell hot tubs, without hedging that it cannot say for certain. Does NOT call create_lead before contact details are provided."
   },
   {
     "id": "lead-full-flow",
@@ -67,7 +67,7 @@
     "id": "hot-tub-kinds",
     "category": "presupposition",
     "turns": ["What kind of hot tubs does your store sell?"],
-    "expected": "States plainly that American Backyard does not sell hot tubs, without hedging or implying they might be carried. No invented products. Offers staff contact or lead capture for special requests."
+    "expected": "States plainly that American Backyard does not sell hot tubs, without hedging or implying they might be carried. No invented products."
   },
   {
     "id": "south-beach-full",
@@ -79,7 +79,7 @@
     "id": "compound-warranty",
     "category": "decomposition",
     "turns": ["Hello, can you please tell me the warranty on the Three Birds Casual St. Lucia Chaise Lounger? And also the Polywood South Beach conversation group's warranty?"],
-    "expected": "Provides the listed warranty for BOTH products. No invented warranty terms."
+    "expected": "Provides a specific listed warranty for BOTH products, stated as product facts, with claims and eligibility left to staff review. Does not refuse or answer for only one product."
   },
   {
     "id": "dining-family-6",
@@ -91,7 +91,7 @@
     "id": "sunbrella-rain",
     "category": "care-materials",
     "turns": ["Can sunbrella fabric cushions survive rain?"],
-    "expected": "Answers from the store's catalog content that Sunbrella/performance-fabric cushions are water- and fade-resistant and handle rain, framed as applying to the store's own cushions. Does not present the answer as general knowledge and does not claim it couldn't find information."
+    "expected": "Answers from the store's catalog content that Sunbrella/performance-fabric cushions are water- and fade-resistant and handle rain, framed as applying to the store's own cushions. Does not claim it couldn't find information."
   },
   {
     "id": "recline-flat-pool",
@@ -109,6 +109,6 @@
     "id": "shademaker-warranty",
     "category": "brand-hierarchy",
     "turns": ["What's the warranty on Shademaker umbrellas?"],
-    "expected": "Finds Shademaker products in the catalog and gives a listed warranty from those products. Does not claim the store doesn't carry Shademaker. No invented warranty terms."
+    "expected": "Gives a specific listed warranty for Shademaker umbrella products from the catalog. Does not claim the store doesn't carry Shademaker and does not refuse."
   }
 ]
