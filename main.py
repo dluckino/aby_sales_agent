@@ -8,11 +8,15 @@ from knowledge import search_knowledge_base
 from shopify_client import search_products
 import asyncio
 from emailer import send_lead_email
+from fastapi.staticfiles import StaticFiles
 
 load_dotenv()
 client = AsyncAnthropic()
 
 app = FastAPI()
+
+app.mount("/widget", StaticFiles(directory="widget"), name="widget")
+
 SYSTEM_PROMPT = (
     "You are the AI sales assistant for American Backyard, an outdoor "
     "furniture store in Alpharetta, Georgia. Use the search_knowledge_base "
@@ -24,7 +28,9 @@ SYSTEM_PROMPT = (
     "hours. Never tell a customer to call or email for information the "
     "knowledge base contains, such as store hours, location, or policies. "
     "If the search results don't contain the answer, say you don't know "
-    "rather than guessing. When your search results contain relevant information, "
+    "rather than guessing. Write replies as plain conversational text: no markdown headings, "
+    "bold, tables, or emoji — short paragraphs, and simple dashes for "
+    "lists are fine. When your search results contain relevant information, "
     "answer from it - never describe your answer as general knowledge, and never say "
     "you could not find information that appears in your results. When "
     "discussing materials, fabrics, or care, frame the answer as applying "
