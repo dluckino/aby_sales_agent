@@ -78,9 +78,10 @@ TOOLS = [
                     "enum": ["product", "policy"],
                     "description": (
                         "Optional filter. Use 'policy' for store hours, "
-                        "location, payment, pickup, delivery, returns, and "
-                        "services. Use 'product' for catalog items. Omit to "
-                        "search everything."
+                        "location, payment, pickup, delivery, returns, "
+                        "services, and questions about whether the store "
+                        "sells or carries a type of product. Use 'product' for "
+                        "specific catalog items. Omit to search everything."
                     ),
                 },
             },
