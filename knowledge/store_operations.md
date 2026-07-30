@@ -36,4 +36,4 @@ American Backyard offers many manufacturers. A list of our typical manufacturers
 ## What We Sell (and What We Don't)
 American Backyard specializes in outdoor living: patio furniture (dining sets, deep seating, sectionals, chaise loungers, Adirondacks, love seat swings, rockers, pool chairs, pool chaises), umbrellas and shade, outdoor cushions and pillows, grills, cleaning and maintenance products, ottomans, furniture covers, umbrella covers, grill covers, firepit covers, rugs, fire pits, and gas logs. 
 
-American Backyard does not sell hot tubs, spas, boats, boat care, or lawn care.
+American Backyard does not sell hot tubs, spas, boats, boat care, green egg grills, or lawn care.

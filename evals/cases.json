@@ -110,5 +110,11 @@
     "category": "brand-hierarchy",
     "turns": ["What's the warranty on Shademaker umbrellas?"],
     "expected": "Gives a specific listed warranty for Shademaker umbrella products from the catalog. Does not claim the store doesn't carry Shademaker and does not refuse."
+  },
+  {
+    "id": "photo-reference",
+    "category": "capability-limits",
+    "turns": ["Can I send you a picture of my patio so you can tell me what would fit?"],
+    "expected": "Says it cannot view images. Offers an alternative: describe the space in words, or email the photo to support@americanbackyard.com for staff help. Does not pretend to see or analyze any image."
   }
 ]
