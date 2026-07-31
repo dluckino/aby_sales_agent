@@ -31,9 +31,15 @@ Pickups take place at the store, located at 310 North Point Cir, Alpharetta, GA 
 Our staff offers free CAD design services — a computer-rendered layout of your outdoor space with your chosen furniture pieces or sets — and will help you curate the perfect outdoor living space, from picking out furniture to deciding where and how to set it up. We can also help you find the perfect set or piece for your space. Our staff can help with certain repairs on older furniture, whether it was purchased from us or elsewhere. To find out whether a repair is possible, contact or visit the store and show us the piece. We also offer warranty help on older furniture purchased from American Backyard — contact the store to find out whether your piece is eligible for warranty service.
 
 ## List of Manufacturers
-American Backyard offers many manufacturers. A list of our typical manufacturers includes: Bernhardt, Ebel, Elaine Smith, Fire Magic Grills, Gensun, Jensen Outdoors, Lloyd Flanders, OW Lee, Polywood, Royal Teak, Seaside Casual, Shademaker, Summerset, TEC, Telescope, Three Birds Casual, Tropitone, and Winston. However, this list does not encompass every possible manufacturer, just the most readily available. If you would like to inquire about other manufacturer oppurtunities, please contact the store or visit us in-person to ask. 
+American Backyard offers many manufacturers. A list of our typical manufacturers includes: Bernhardt, Ebel, Elaine Smith, Fire Magic Grills, Gensun, Jensen Outdoors, Lloyd Flanders, OW Lee, Polywood, Royal Teak, Seaside Casual, Shademaker, Summerset, TEC, Telescope, Three Birds Casual, Tropitone, and Winston. This list covers the manufacturers American Backyard carries. Manufacturers not on this list are not currently carried, though staff can sometimes check for substitutes or special-order possibilities — contact the store or leave your information with the assistant and staff will follow up.
+
+The website does not feature all the furniture American Backyard sells. Any product from the listed manufacturers can be ordered through the store as long as the manufacturer currently makes it, and many products are on display in the showroom even when they are not on the website.
 
 ## What We Sell (and What We Don't)
+The website shows only a portion of what American Backyard can sell. Any product from our listed manufacturers can typically be special-ordered through the store, in sets or as individual pieces — including individual chairs from dining sets — even if it does not appear on the website. Contact the store or visit the showroom to ask about any manufacturer's product.
+
+American Backyard works with trade professionals such as interior designers and architects on a case-by-case basis. Contact the store to discuss trade arrangements.
+
 American Backyard specializes in outdoor living: patio furniture (dining sets, deep seating, sectionals, chaise loungers, Adirondacks, love seat swings, rockers, pool chairs, pool chaises), umbrellas and shade, outdoor cushions and pillows, grills, cleaning and maintenance products, ottomans, furniture covers, umbrella covers, grill covers, firepit covers, rugs, fire pits, and gas logs. 
 
-American Backyard does not sell hot tubs, spas, boats, boat care, green egg grills, or lawn care.
+American Backyard does not sell hot tubs, spas, boats, boat care, big green egg grills (also called green egg grills), or lawn care.

@@ -53,9 +53,10 @@
     "sends_email": true,
     "turns": [
       "Do you guys offer financing or payment plans?",
-      "Sure - test@example.com, I'm Dominic."
+      "Sure - test@example.com, I'm Dominic.",
+      "Yes please, follow up about financing."
     ],
-    "expected": "Turn 1: says it does not have financing information, without claiming financing is or is not offered, and asks for the customer's email so staff can follow up. Turn 2: creates the lead with the provided email and confirms staff will follow up."
+    "expected": "Turn 1: answers what payment information is known, says it does not have financing details without claiming financing is or is not offered, and gives store contact information. Turn 2: either creates the lead or asks one brief confirmation before doing so. Turn 3: the lead is created with the provided email and staff follow-up is confirmed."
   },
   {
     "id": "delivery-price-quote",
@@ -91,7 +92,7 @@
     "id": "sunbrella-rain",
     "category": "care-materials",
     "turns": ["Can sunbrella fabric cushions survive rain?"],
-    "expected": "Answers from the store's catalog content that Sunbrella/performance-fabric cushions are water- and fade-resistant and handle rain, framed as applying to the store's own cushions. Does not claim it couldn't find information."
+    "expected": "Answers from the store's catalog content that Sunbrella/performance-fabric cushions are water- and fade-resistant and handle rain. Does not claim it couldn't find information."
   },
   {
     "id": "recline-flat-pool",
@@ -116,5 +117,83 @@
     "category": "capability-limits",
     "turns": ["Can I send you a picture of my patio so you can tell me what would fit?"],
     "expected": "Says it cannot view images. Offers an alternative: describe the space in words, or email the photo to support@americanbackyard.com for staff help. Does not pretend to see or analyze any image."
+  },
+  {
+    "id": "order-status-basic",
+    "category": "order-inquiries",
+    "turns": ["Track my order."],
+    "expected": "States it cannot look up orders or tracking. Directs the customer to call 770-754-5750 or email support@americanbackyard.com with their order number. Does NOT ask for the customer's email, does NOT create a lead, and does not pretend to check anything."
+  },
+  {
+    "id": "order-status-detailed",
+    "category": "order-inquiries",
+    "turns": ["Any idea when my order #10294 will be shipped?"],
+    "expected": "States it cannot look up orders or shipping status. Directs the customer to call or email the store with their order number. Does not invent a shipping estimate, does not pretend to check, and does not collect contact information."
+  },
+  {
+    "id": "parts-replacement",
+    "category": "parts-accessories",
+    "turns": ["Do you carry replacement pillows for Gensun?"],
+    "expected": "Does not claim the store cannot get Gensun items. Notes that products from the store's listed manufacturers can typically be ordered even if not shown on the website, and routes the customer to store contact or offers to take their information."
+  },
+  {
+    "id": "negative-material",
+    "category": "constrained-search",
+    "turns": ["I don't want mgp or hdpe material, what other options do you have?"],
+    "expected": "Recommends furniture in materials other than plastic lumber — such as teak, aluminum, or wicker options — and does NOT suggest any POLYWOOD or other HDPE/MGP products. Named catalog directions only."
+  },
+  {
+    "id": "constrained-search-hard",
+    "category": "constrained-search",
+    "turns": ["I am looking for a high top patio table that has six chairs that swivel."],
+    "expected": "Engages all the constraints (bar/counter height, six seats, swivel chairs). Either recommends specific named catalog options or honestly says it doesn't see an exact match and offers alternatives or staff help. Does not ignore constraints or invent products."
+  },
+  {
+    "id": "brand-not-carried",
+    "category": "brand-coverage",
+    "turns": ["Do you sell green egg grill"],
+    "expected": "States plainly that American Backyard does not sell Big Green Egg grills, without hedging. May suggest grill brands the store does carry, such as Fire Magic, Summerset, TEC, or American Fire Grills."
+  },
+  {
+    "id": "trade-discount",
+    "category": "pricing-programs",
+    "turns": ["I work for an architectural firm. Do you provide any additional discount to Interior Designers?"],
+    "expected": "Indicates the store works with trade professionals on a case-by-case basis, without promising or quoting any discount or percentage, and directs the customer to contact the store to discuss."
+  },
+  {
+    "id": "compound-ebel",
+    "category": "decomposition",
+    "turns": ["Hi. I am interested in a few Ebel pieces. The prices as shown included shipping/delivery I see. Does it come assembled? Lead time is 20 weeks? Thanks"],
+    "expected": "Addresses all three parts. Gently corrects the shipping assumption (delivery is priced separately and varies by location). States that the delivery crew places and assembles furniture per the delivery policy. Addresses Ebel lead times from listings or honestly defers per-product. No invented figures."
+  },
+  {
+    "id": "solicitation-pitch",
+    "category": "out-of-scope",
+    "turns": ["Why Store Revamp? Store revamp is essential for the following reasons: 1. Improve user experience 2. Increased conversion rate 3. Modern design look. 4. Better functionality 5. Improved SEO and Speed 6. Brand repositioning 7. Better analytics and integration. By revamping you don't just change your store design but you're ensuring it stays competitive, align with customer expectations, increase your profit. Are you open for this?"],
+    "expected": "Politely declines to engage with the sales pitch. Does not express interest or openness on the store's behalf, makes no commitments, and does not create a lead or ask for the sender's contact details. May direct business inquiries to support@americanbackyard.com."
+  },
+  {
+    "id": "usa-made",
+    "category": "brand-facts",
+    "turns": ["Is Polywood made in the USA?"],
+    "expected": "States that POLYWOOD furniture is made in the USA, based on catalog content. Does not deflect this question to a phone call."
+  },
+  {
+    "id": "ship-usa",
+    "category": "delivery",
+    "turns": ["Do you ship around the USA"],
+    "expected": "States what the delivery policy covers: delivery across Georgia, with specialty orders possible to bordering states. Does not claim nationwide shipping is available, and does not flatly assert shipping elsewhere is impossible — directs customers outside the area to contact the store."
+  },
+  {
+    "id": "set-split",
+    "category": "store-policy",
+    "turns": ["Can you buy the chairs from a dining set separately?"],
+    "expected": "States that products can be purchased individually, including chairs from sets. May note that the store can order items from its manufacturers even when not shown on the website. Does not deflect this to a phone call."
+  },
+  {
+    "id": "listed-brand-unlisted-product",
+    "category": "brand-coverage",
+    "turns": ["Do you have Lloyd Flanders Mackinac Furniture at your store?"],
+    "expected": "Confirms Lloyd Flanders is one of the store's manufacturers. Does not say the store may not carry the collection — explains the website does not show everything, that products from listed manufacturers can typically be ordered, and that it may be in the showroom. Offers staff contact or lead capture to confirm. Does not flatly claim the item is in stock."
   }
 ]
