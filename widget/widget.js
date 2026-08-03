@@ -25,7 +25,9 @@
         ".aby-bot{background:#fff;border:1px solid #ddd;margin-right:auto;}",
         ".aby-typing{opacity:.6;font-style:italic;}",
         "#aby-inputrow{display:flex;border-top:1px solid #ddd;}",
-        "#aby-input{flex:1;border:none;padding:12px;font-size:14px;outline:none;}",
+        "#aby-input{flex:1;border:none;padding:12px;font-size:14px;}",
+        "#aby-input:focus{outline:2px solid #2e5d3b;outline-offset:-2px;}",
+        "#aby-bubble:focus-visible,#aby-send:focus-visible{outline:3px solid #14532d;outline-offset:2px;}",
         "#aby-send{border:none;background:#2e5d3b;color:#fff;padding:0 18px;",
         "cursor:pointer;font-size:14px;}",
         "#aby-send:disabled{opacity:.5;cursor:default;}"
@@ -39,6 +41,8 @@
     
     var panel = document.createElement("div");
     panel.id = "aby-panel";
+    panel.setAttribute("role", "dialog");
+    panel.setAttribute("aria-label", "Nextdoor Neighbor Chat");
 
     var header = document.createElement("div");
     header.id = "aby-header";
@@ -50,6 +54,7 @@
 
     var msgs = document.createElement("div");
     msgs.id = "aby-msgs";
+    msgs.setAttribute("aria-live", "polite");
 
     var inputRow = document.createElement("div");
     inputRow.id = "aby-inputrow";
@@ -58,6 +63,7 @@
     input.id = "aby-input";
     input.placeholder = "Ask about products, delivery, store operations, or more...";
     input.maxLength = 2000;
+    input.setAttribute("aria-label", "Type your message here");
 
     var sendBtn = document.createElement("button");
     sendBtn.id = "aby-send";
@@ -93,6 +99,13 @@
         if (!showing) input.focus();
     });
 
+    panel.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+            panel.style.display = "none";
+            bubble.focus();
+        }
+    });
+    
     var pending = false;
 
     function send() {
