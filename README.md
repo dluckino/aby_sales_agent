@@ -13,7 +13,7 @@ https://github.com/user-attachments/assets/cbbbf13b-5406-4e80-8501-b85396a6b324
 
 ## 1. Overview
 
-**Nextdoor Neighbor** is a chat widget on the store's site that answers customer questions from the store's real knowledge — the product catalog, policy documents I wrote with the owners, and an ~85-section furniture-care guide I compiled from manufacturer documentation. It looks up live prices from Shopify, respects hard boundaries (no discounts, no stock claims, no order lookups), and hands off to staff by capturing leads that land in the store inbox.
+**Nextdoor Neighbor** is a chat widget built for the store's site that answers customer questions from the store's real knowledge — the product catalog, policy documents I wrote with the owners, and an ~85-section furniture-care guide I compiled from manufacturer documentation. It looks up live prices from Shopify, respects hard boundaries (no discounts, no stock claims, no order lookups), and hands off to staff by capturing leads that land in the store inbox. It currently runs against a test storefront; production deployment is scheduled for winter, behind the security gate described in §9.
 
 The system is a RAG (retrieval-augmented generation) architecture: nothing was fine-tuned. The model answers from documents retrieved at question time, which keeps every claim groundable and lets the knowledge base update in seconds instead of retraining.
 
