@@ -46,7 +46,7 @@ The KB is authored, not scraped. Over the summer I wrote the store's operational
 
 Chunking is semantic and header-anchored: one chunk per product (with a title/vendor/tags header), one chunk per `##` policy section. Retrieval units match answer units, and headers deliberately carry customer vocabulary — the don't-sell line says both "Big Green Egg grills" and "green egg grills" because that's how customers actually type it, and embeddings anchor on it.
 
-Standing law (§6): **content changes trigger an eval review**, because rubrics written against yesterday's knowledge.
+Standing law (§6): **content changes trigger an eval review**, because rubrics written against yesterday's knowledge rot.
 
 ## 4. The Evaluation System
 
@@ -135,4 +135,4 @@ Key commits: `7afc884` (eval era close — fabrication caught and addressed), `a
 
 ---
 
-Built by Dominic Luckino ([github.com/dluckino](https://github.com/dluckino)) — every line typed, run, and verified by me; utilized Claude coding agent. MIT License.
+Built by Dominic Luckino ([github.com/dluckino](https://github.com/dluckino)) — every line typed, run, and verified by me; built with a Claude coding agent. MIT License.
