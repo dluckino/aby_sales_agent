@@ -6,6 +6,11 @@ Built solo over a summer internship at American Backyard, my family's outdoor-fu
 
 ---
 
+https://github.com/user-attachments/assets/cbbbf13b-5406-4e80-8501-b85396a6b324
+
+---
+
+
 ## 1. Overview
 
 **Nextdoor Neighbor** is a chat widget on the store's site that answers customer questions from the store's real knowledge — the product catalog, policy documents I wrote with the owners, and an ~85-section furniture-care guide I compiled from manufacturer documentation. It looks up live prices from Shopify, respects hard boundaries (no discounts, no stock claims, no order lookups), and hands off to staff by capturing leads that land in the store inbox.
